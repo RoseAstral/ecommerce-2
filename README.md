@@ -38,7 +38,7 @@ EMAIL_HOST_USER=your-email@example.com
 EMAIL_HOST_PASSWORD=your-secure-app-password
 EMAIL_USE_TLS=True
 ```
-You will also need to link the app to a database for it to function
+### You will also need to link the app to a database for it to function
 Open settings.py
 Scroll down to the # Database section
 fill in the required infomation to like the app to a database
