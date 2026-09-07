@@ -1,7 +1,13 @@
 # Ecommerce store front
 
 ## Prerequisites
-The prerquisite modules for this application can be found in the requirements.txt file
+﻿asgiref==3.11.1
+Django==6.0.6
+djangorestframework==3.17.1
+mysqlclient==2.2.8
+python-decouple==3.8
+sqlparse==0.5.5
+tzdata==2026.2
 
 ## Getting Started Locally
 
