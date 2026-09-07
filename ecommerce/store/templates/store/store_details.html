@@ -1,0 +1,21 @@
+{% extends "store/base.html" %}
+{% block title %}
+    {{ store.name }}
+{% endblock title %}
+{% block content %}
+    <h1>{{ store.name }}</h1>
+    <div class="navbutton">
+        <a href="{% url 'add_product' pk=store.pk %}">ADD PRODUCT</a>
+    </div>
+    <div>
+        <h3>Products</h3>
+        {% for product in filtered_products %}
+            <a href="{% url 'product_details' pk=product.pk %}">{{ product.label }}</a><br>
+            <h6>Price: R{{ product.price }}</h6>
+            {% if request.user == store.owner or request.user.is_superuser %}
+                <a href="{% url 'edit_product' pk=product.pk %}">EDIT</a>
+                <a href="{% url 'delete_product' pk=product.pk %}">DELETE</a><br>
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endblock content %}

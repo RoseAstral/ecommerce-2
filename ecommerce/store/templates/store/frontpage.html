@@ -1,0 +1,37 @@
+{% extends "store/base.html" %}
+{% block title %}
+    FrontPage
+{% endblock %}
+{% block content %}
+    <h1>Ecommerce</h1>
+    <h3>- A Storefront platform</h3>
+    {% if request.user.is_authenticated %}
+        <h3>Hello {{ request.user.username }}</h3>
+        {% else %}
+            <h3>Hello and Welcome</h3>
+        {% endif %} 
+    <h2>List of Stores</h2>
+    {% if store_list %}
+        {% for store in store_list %}
+            <li>
+                <p>
+                    <a href="{% url 'store_details' pk=store.pk %}">{{ store.name }}</a>
+                </p>
+                {% if request.user == store.owner or request.user.is_superuser %}
+                    <a href="{% url 'edit_store' pk=store.pk %}">EDIT</a>
+                    <a href="{% url 'delete_store' pk=store.pk %}">DELETE</a>
+                {% endif %}
+            </li>
+        {% endfor %}
+    {% else %}
+            <p>There are currently no stores listed</p>
+    {% endif %}
+    <h2>Cart</h2>
+    {% if cart_products %}
+        {% for obj in cart_products %}
+            <p>{{ obj.label }}</p>
+        {% endfor %}
+    {% else %}
+            <p>There are no Products in your cart</p>
+    {% endif %}
+{% endblock content %}
