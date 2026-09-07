@@ -1,6 +1,7 @@
 # Ecommerce store front
 
 ## Prerequisites
+```bash
 ﻿asgiref==3.11.1
 Django==6.0.6
 djangorestframework==3.17.1
@@ -8,6 +9,7 @@ mysqlclient==2.2.8
 python-decouple==3.8
 sqlparse==0.5.5
 tzdata==2026.2
+```
 
 ## Getting Started Locally
 
