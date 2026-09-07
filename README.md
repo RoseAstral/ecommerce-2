@@ -17,8 +17,8 @@ Follow these sequential steps to set up the development environment on your mach
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com
-cd into ecomerce
+git clone https://github.com](https://github.com/RoseAstral/ecommerce-2.git
+cd into ecommerce folder
 ```
 
 ### 2. Set Up a Virtual Environment
