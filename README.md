@@ -16,7 +16,7 @@ Follow these sequential steps to clone the repository and run the application lo
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com
+git clone https://github.com/RoseAstral/ecommerce-2.git
 ```
 ```bash
 cd ecommerce
