@@ -17,10 +17,11 @@ Follow these sequential steps to set up the development environment on your mach
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com](https://github.com/RoseAstral/ecommerce-2.git
-cd into ecommerce folder
+git clone https://github.com/RoseAstral/ecommerce-2.git
 ```
+```bash
 
+```
 ### 2. Set Up a Virtual Environment
 ```bash
 python3 -m venv venv
@@ -29,7 +30,6 @@ source venv/bin/activate  # On Windows use: venv\Scripts\activate
 
 ### 3. Install Dependencies
 ```bash
-pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
@@ -49,7 +49,7 @@ EMAIL_USE_TLS=True
 ### You will also need to link the app to a database for it to function
 Open settings.py
 Scroll down to the # Database section
-fill in the required infomation to like the app to a database
+fill in the required information to like the app to a database
 
 
 ### 5. Apply Migrations and Create a Superuser
