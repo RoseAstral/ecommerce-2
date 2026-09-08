@@ -113,4 +113,4 @@ python manage.py createsuperuser
 ```bash
 python manage.py runserver
 ```
-Open your browser and navigate to `http://127.0.0`.
+Open your browser and navigate to `http://127.0.0.1`.
