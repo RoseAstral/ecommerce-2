@@ -14,13 +14,13 @@ Before you get started, ensure you have the following installed on your local ma
 
 Follow these sequential steps to clone the repository and run the application locally.
 
-### 1. Clone the Repository
-```bash
-git clone https://github.com/RoseAstral/ecommerce-2.git
-```
-```bash
-cd ecommerce
-```
+### 1. Download the zip
+  1. Download the zip file of the repository from the main page.
+  2. Open the folder through Visual Studio Code
+  3. cd into the ecommerce folder with with command
+     ```bash
+     cd ecommerce/
+     ```
 ### 2. Set Up a Virtual Environment
 ```bash
 # Create the environment
